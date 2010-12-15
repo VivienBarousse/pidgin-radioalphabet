@@ -49,9 +49,6 @@ static PurpleCmdRet radio_callback(PurpleConversation* conv,
 static PurpleCmdId radio_command;
 
 static gboolean plugin_load(PurplePlugin* plg) {
-    purple_notify_message(plugin, PURPLE_NOTIFY_MSG_INFO, "Hello World!",
-                        "This is the Hello World! plugin :)", NULL, NULL, NULL);
-
     plugin = plg;
 
     radio_command = purple_cmd_register("radio",
